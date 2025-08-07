@@ -2,6 +2,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, Users, Clock, TrendingUp } from "lucide-react";
 
+// ✅ Import profile image correctly
+import profileImage from "@/images/4.jpg";
+
 const AboutSection = () => {
   const stats = [
     { icon: Users, label: "Happy Clients", value: "100+" },
@@ -25,12 +28,12 @@ const AboutSection = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              {/* Profile Image for About Section */}
+              {/* ✅ Fixed Profile Image */}
               <div className="w-48 h-48 mx-auto md:mx-0 mb-8 rounded-xl bg-gradient-primary p-1">
                 <div className="w-full h-full rounded-xl bg-white flex items-center justify-center">
                   <div className="w-44 h-44 rounded-xl bg-muted flex items-center justify-center text-muted-foreground">
                     <img
-                      src="/src/images/4.jpg" 
+                      src={profileImage} 
                       alt="Profile"
                       className="w-full h-full object-cover"
                     />

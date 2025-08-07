@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Code, ShoppingCart, TrendingUp, Globe, ChevronDown } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
+// ✅ Import image directly from src/images
+import profileImage from "@/images/4.jpg"; // Make sure the path is correct!
+
 const HeroSection = () => {
   const isMobile = useIsMobile();
   
@@ -19,10 +22,10 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10 mt-0 md:mt-0 pt-8 md:pt-0">
         <div className="max-w-4xl mx-auto">
-          {/* Profile Image - Larger and modern */}
+          {/* ✅ Fixed Profile Image */}
           <div className="w-40 h-40 md:w-56 md:h-56 mx-auto mb-6 md:mb-8 overflow-hidden rounded-full shadow-[0_0_30px_rgba(0,255,0,0.2)]">
             <img 
-              src="/src/images/4.jpg" 
+              src={profileImage} 
               alt="Profile" 
               className="w-full h-full object-cover"
             />
