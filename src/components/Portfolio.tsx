@@ -37,7 +37,7 @@ const Portfolio = () => {
 
         {/* Floating WhatsApp Icon */}
         <a 
-          href="https://wa.me/1234567890" 
+          href="https://wa.me/+92370 5978907" 
           target="_blank" 
           rel="noopener noreferrer"
           className="fixed md:bottom-6 bottom-[56px] right-6 bg-primary text-primary-foreground p-4 rounded-full shadow-lg hover:shadow-glow transition-all duration-300 z-50"
